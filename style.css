@@ -1,0 +1,559 @@
+:root {
+  --font-family: "HelveticaNeue", sans-serif;
+}
+
+@font-face {
+  font-family: "HNB";
+  src: url(/fonts/HelveticaNeue-Bold.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/fonts/HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+  font-family: "HRL" ;
+  src: url(/fonts/HelveticaNeue-Light.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+body {
+    background-color: #373a3c;
+    color: white;
+    font-family: "HelveticaNeue";
+
+
+}
+.navbar {
+    background: #373a3c;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+    
+}
+
+.nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.xbox-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    text-align: center;
+}
+
+.nav-menu a {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: rgba(255, 255, 255, 0.5);
+text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #fff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 209px;
+height: 38px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    margin-top: 50px;
+    position: relative;
+    height: 644px;
+    overflow: hidden;
+    
+}
+
+.hero-slider {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/fon1.png) center/cover;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #fff;
+}
+
+.hero-content p {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #fff;
+padding-bottom: 134px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+
+
+/* Buttons */
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    border-radius: 4px;
+width: 136px;
+height: 38px;
+background: #8dd83d;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #fff;
+}
+
+.btn-secondary {
+    border-radius: 4px;
+width: 148px;
+height: 38px;
+background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #fff;
+}
+
+
+.btn-green {
+border-radius: 4px;
+width: 278px;
+height: 60px;
+background: #8dd83d;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 131%;
+color: #fff;
+
+}
+
+
+.btn-dark {
+    background: #4a4a4a;
+    color: #fff;
+}
+
+
+
+
+
+/* Value Section */
+.value-section {
+    background: #4a4a4a;
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url(/img/fon4.png);
+}
+
+.xbox-logo-center {
+    margin-bottom: 20px;
+}
+
+.value-title h2 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 48px;
+color: #fff;
+
+}
+
+.value-title p {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #fff;
+
+}
+
+.value-cards {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-top: 42px;
+}
+
+.value-card {
+    background: #fff;
+    color: #000;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 320px;
+}
+
+
+.card-image {
+    height: 180px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+}
+
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+color: #435766;
+padding-bottom: 13px;
+text-align: left;
+}
+
+.card-content p {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #435766;
+padding-bottom: 38px;
+text-align: left;
+}
+
+/* Exclusive Games Section */
+.exclusive-games {
+    position: relative;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 600"><rect fill="%232a2a2a" width="1920" height="600"/><circle fill="%231a1a1a" cx="200" cy="150" r="50" opacity="0.5"/><circle fill="%231a1a1a" cx="800" cy="100" r="40" opacity="0.5"/><circle fill="%231a1a1a" cx="1400" cy="180" r="60" opacity="0.5"/></svg>') center/cover;
+    min-height: 600px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.section-title i {
+    color: #7FBA00;
+    margin-left: 10px;
+}
+
+.games-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.game-card {
+    background: #fff;
+    color: #000;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.02);
+}
+
+.game-card.featured {
+    transform: scale(1.05);
+}
+
+.game-card.featured:hover {
+    transform: scale(1.07);
+}
+
+.game-image {
+    height: 200px;
+    background: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.game-placeholder.soldier {
+    background: linear-gradient(135deg, #3e2723 0%, #5d4037 100%);
+}
+
+.game-placeholder.destiny {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+}
+
+.game-placeholder.steep {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.game-placeholder.forza {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.game-content {
+    padding: 20px;
+}
+
+.game-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.game-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.xbox-store {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 50px;
+}
+
+/* Design Lab Section */
+.design-lab {
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.design-lab-content {
+    max-width: 600px;
+    color: #000;
+}
+
+.design-lab-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.design-lab-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.design-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.controllers-showcase {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: 300px;
+}
+
+.controller-float {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.controller-float.c1 { top: 0; left: 100px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); transform: rotate(-15deg); }
+.controller-float.c2 { top: 50px; left: 250px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); transform: rotate(10deg); }
+.controller-float.c3 { top: 120px; left: 50px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); transform: rotate(5deg); }
+.controller-float.c4 { top: 100px; left: 400px; background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); transform: rotate(-20deg); }
+.controller-float.c5 { top: 180px; left: 200px; background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); transform: rotate(15deg); }
+.controller-float.c6 { top: 20px; left: 450px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); transform: rotate(-5deg); }
+.controller-float.c7 { top: 200px; left: 350px; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); transform: rotate(25deg); }
+
+/* Footer */
+.footer {
+    background: #4a4a4a;
+    padding: 60px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    color: #7FBA00;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #7FBA00;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #7FBA00;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    border-top: 1px solid #666;
+    padding-top: 20px;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .value-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .controllers-showcase {
+        display: none;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
