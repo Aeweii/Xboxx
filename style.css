@@ -294,8 +294,7 @@ body {
 }
 
 .card-image img {
-  max-width: 100%;
-  max-height: 140px;
+
   object-fit: contain;
 }
 
@@ -403,9 +402,10 @@ body {
   background-position: center;
   padding: 50px 20px;
   position: relative;
-  min-height: 400px;
+
   display: flex;
   align-items: center;
+  height: 480px;
 }
 
 .design-container {
@@ -446,6 +446,10 @@ body {
   min-width: 180px;
   padding: 12px 20px;
   height: auto;
+}
+
+.play {
+  padding-left: 200px;
 }
 
 /* Footer */
