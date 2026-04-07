@@ -134,14 +134,16 @@ body {
   height: auto;
   overflow: hidden;
 }
+.heroright {
 
+}
 .hero-slider {
-  height: 100%;
   min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url(img/fon1.png) center/cover no-repeat;
+  height: 644px;
 }
 
 .hero-content {
@@ -155,6 +157,7 @@ body {
   font-weight: 400;
   font-size: 36px;
   color: #fff;
+  text-align: left;
 }
 
 .hero-content p {
@@ -163,6 +166,7 @@ body {
   font-size: 24px;
   color: #fff;
   padding-bottom: 60px;
+  text-align: left;
 }
 
 /* Buttons */
